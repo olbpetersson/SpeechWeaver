@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/delimitView5"
+        android:layout_width="300dp"
+        android:layout_height="1dip"
+        android:layout_above="@+id/bTapToTalk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/attach_file_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delimitView1"
+        android:layout_below="@+id/delimitView1"
+        android:layout_marginTop="16dp"
+        android:text="Attached files"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/latest_action_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/attach_file_title"
+        android:layout_below="@+id/delimit_view2"
+        android:layout_marginTop="25dp"
+        android:text="Requirement"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/requirement_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/latest_action_title"
+        android:layout_below="@+id/latest_action_title"
+        android:layout_marginTop="22dp"
+        android:text="ID: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/annotation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/requirement_title"
+        android:layout_below="@+id/requirement_title"
+        android:layout_marginTop="23dp"
+        android:text="Annotation: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/delimit_view2"
+        android:layout_width="300dp"
+        android:layout_height="1dip"
+        android:layout_alignLeft="@+id/delimitView1"
+        android:layout_below="@+id/text_path_structure"
+        android:layout_marginTop="24dp"
+        android:background="#FF0000" />
+
+    <View
+        android:id="@+id/delimitView1"
+        android:layout_width="300dp"
+        android:layout_height="1dip"
+        android:layout_alignLeft="@+id/delimitView5"
+        android:layout_below="@+id/annotation_title"
+        android:layout_marginTop="54dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/text_path_structure"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="No context"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/attachedFileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/annotation_title"
+        android:layout_below="@+id/attach_file_title"
+        android:layout_marginTop="16dp"
+        android:text="No attached file at the moment" />
+
+    <Button
+        android:id="@+id/bAttacheFiles"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/attachedFileRemove"
+        android:layout_alignBottom="@+id/attachedFileRemove"
+        android:layout_toLeftOf="@+id/attachedFileRemove"
+        android:enabled="false"
+        android:text="Add file" />
+
+    <Button
+        android:id="@+id/attachedFileRemove"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/delimitView5"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/attach_file_title"
+        android:enabled="false"
+        android:text="Clear outbox" />
+
+    <Button
+        android:id="@+id/bTapToTalk"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/attachedFileText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/bAttacheFiles"
+        android:enabled="false"
+        android:text="Annotate" />
+
+    <Button
+        android:id="@+id/bGenerateReport"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/attachedFileRemove"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="17dp"
+        android:enabled="false"
+        android:text="Report" />
+
+</RelativeLayout>

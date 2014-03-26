@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_path_structure"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="No context"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/delimitView5"
+        android:layout_width="300dp"
+        android:layout_height="1dip"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/latest_action_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Latest action"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/requirement_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Requirement: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/annotation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="Annotation: "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/delimit_view2"
+        android:layout_width="300dp"
+        android:layout_height="1dip"
+        android:layout_marginTop="24dp"
+        android:background="#FF0000"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/attach_file_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Attached files"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <View
+        android:id="@+id/delimitView1"
+        android:layout_width="300dp"
+        android:layout_height="1dip"
+        android:layout_marginTop="54dp"
+        android:background="#FF0000"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/bAttacheFiles"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="+files" />
+
+    <Button
+        android:id="@+id/bTapToTalk"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Ann req" />
+
+    <Button
+        android:id="@+id/bGenerateReport"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="Gen rept" />
+
+</LinearLayout>

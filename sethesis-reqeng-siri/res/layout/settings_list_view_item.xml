@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/settings_item_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_item_title"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textUri"
+        android:hint="ip:port" >
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:id="@+id/settings_line_view"
+        android:layout_width="300dp"
+        android:layout_height="1dip"
+        android:layout_below="@+id/settings_item_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FF0000" />
+
+    <TextView
+        android:id="@+id/settings_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Server configuration"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/settings_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_item_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Set the IP on the format ip:port"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
