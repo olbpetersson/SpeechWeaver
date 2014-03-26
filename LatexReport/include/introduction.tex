@@ -1,0 +1,46 @@
+\chapter{Introduction}
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{Y}{ou can trace} many errors in software products and systems to the management of requirements \citep{tseng1998, wiegers2009software}. The fact that requirements in many ways is people oriented, not technical oriented, makes room for errors of a more complex nature. These errors might be that requirements changes during the lifespan of a project \citep{saiedian2000, bjarnason2011requirements}, and are not properly updated. A key challenge in requirements engineering is that customers typically express their needs in natural language, while the requirements engineer is tasked to elicit and translate this informal information into a more formal requirement specification. 
+This makes room for interpretational errors and ambiguities \citep{al1996,ross1977}, where information gets lost in translation \citep{bjarnason2011requirements}. Even though companies and developers acknowledges problems associated to requirement management, many do not put enough effort and time into the task of requirement maintenance \citep{forward2002}. In 2012 \citet{wnuk2012obsolete} presented that 84.3\% of their recipients considered obsolete requirement specifications to be either serious or somewhat serious, 76.8\% of those recipients reported that they did not have any tool, method or process for handling obsolete requirement specifications. With the agile methodologies that have become more popular in the last years, more responsibility is put on the developers (and customers) to be responsive to changes \citep{highsmith2001, ibrahim2012overview}. 
+
+Since its introduction in 1952 \citep{davis1952}, the development of speech recognition has reached a point where it has become good enough to be used with a satisfying result \citep{ballinger2011speech,ballinger2010lang,schalkwyk2010}. We believe that using speech recognition can be one way to lower the time needed and perceived barriers to query and update requirements during software maintenance and during the evolution of requirements understanding in a development project. This could act as a lightweight access mechanism for potentially large requirements databases and allow more active ways of working with requirements. There is a risk that much information is currently lost, and even forgotten, if it is not updated or recorded immediately. There is also a risk that navigating large requirements databases takes longer time and requires more effort than more lightweight interactions would allow.
+
+Quality assurance of requirements are often talked about in the context of verification and validation~\citep{reqqa,qualitybook}. But there has been relatively little work on the quality of Software Requirement Specification (SRS) and in particular for individual requirements. The focus is still on reviews, audits and walkthroughs and primarily on the SRS as a whole. Verification of requirements is primarily described as actions taken periodically or at special points in time during a project such as gates or partial deliveries. It does not address continuous or ongoing quality assurance of requirements. \citet{reqqa} stresses the importance of starting with QA as early as possible , in the requirement elicitation phase. They also talk about techniques to minimize the chance of introducing defects in requirements documents and the need for tool support and how that could facilitate "other" quality aspects, not currently being addressed.
+
+\citet{IEEE830} defines quality characteristics and how to create quality SRSs, it does not describe processes on how to work with requirements in a continuous fashion.
+
+This thesis will describe our design and evaluation of an annotation system for requirements databases that is based on speech recognition input from a smartphone. The thesis aims to evaluate if a speech recognizer is a possible tool for working towards large scale SRSs, and how such a tool is perceived by end users. Furthermore, we will evaluate if an annotation system can enable a way of continuously working with quality assurance of a requirement specifications.
+
+In order for our evaluation of the system to be more realistic this research was conducted in co-operation with the Swedish company Systemite AB. Systemite develops a tool that support the management and development of product lines of software systems, called SystemWeaver.
+An essential part of this tool is its requirements management and requirements engineering support.
+Through the collaboration with Systemite we could evaluate our annotation system on four industrial requirements databases from a large Swedish company developing software-intensive, embedded systems.
+
+\section{Purpose}
+The aim of the thesis is to present a way of incorporating mobile speech recognition (using a smart device) to existing large scale requirement specifications to make it easier for companies to actively work with the maintenance of requirement documentation. With today's technologies in smart devices, speech recognizers have become more accurate and available. We believe that we therefore can enable the people associated to a requirement document to be able to, through mobile smart devices, maintain the documentation anytime, anywhere. Furthermore, the purpose of the product that is developed during this research is to make it easier for developers to work concurrently with the development of software and the maintenance of that software's requirements, hopefully resulting in up to date requirements and fewer errors associated with the requirement documentation. The first part of the product is the speech recognition annotation application, which annotates requirement documents. The second part of the product is to create reports from the annotations added from the speech recognition application and present the data collected for analysis.
+
+We will also share our experiences with the developed system and its associated technologies as well as giving our thoughts on annotating software artifacts and using speech recognition. In the thesis we will also provide ideas for future work in this area. 
+
+We will investigate if this product will make it easier to work continuously with requirements. Furthermore we will also look into which interesting data could be used from the annotated documents. 
+
+\section{Goals}
+The goal is to develop a mobile smart device application which uses speech-recognition to annotate requirement specifications in a software project. Furthermore the goal is to extract data from the annotations to visualize information about the requirements. The data will be analyzed and we will investigate which valuable aggregations and metrics that could be extracted from the data to allow an owner of the requirements to easily check the status of the specification, thus hopefully be able to recognize were improvements and clarifications needs to be done to higher the quality of the requirement specification.
+
+Finally, we will evaluate if the developed product is feasible within large scale requirement projects.
+
+
+\section{Scope and limitations}
+
+The scope is to evaluate the concept of annotating requirement documentations with the help of mobile speech recognition. We will not investigate speech recognizers and the speech recognition will be considered a black box, something that can transform spoken words into literal strings. For this research, Android's provided speech recognizer will be used. The reason is that we will not build a speech-to-text engine to fit our purpose, we rather want to explore a state of practice speech recognizer and how it can be integrated into our solution.
+
+To have a realistic evaluation, we will look at real requirements from real software projects. We will however delimit us to software projects within the automotive industry, since it is the integration between our developed product and requirement databases that lies in focus, we consider that requirement databases from one industry will be general enough.
+
+Even though the technical solutions will aim to be general, our product will be integrated into Systemite AB's SystemWeaver (see Section~\ref{sec:SystemWeaver}) and other requirement managing software will not be taken into consideration.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+\chapter{Conclusion}
+\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his thesis presents} the design, implementation and evaluation of a lightweight system for annotating requirements specifications. 
+By connecting the default speech recognition available in a present-day (Android-based) mobile device to a commercial software development management tool, we can allow access and annotation of large-scale requirements databases from anywhere where you can reach the Internet. 
+
+Speech recognition has improved considerably in recent years and its accuracy has increased. 
+However, one of our experiments show that the accuracy of speech recognition available in mobile devices today is not yet adequate to allow free text input, such as comments or larger edits, in the often specialized-vocabulary, technical domains of industrial requirements specifications (SRSs). 
+Even when used for shorter inputs, such as the lookup of a requirement prior to annotating it, accuracy is often poor. 
+By extending our system with a simple string distance measurement we could improve accuracy considerably for the more limited lookup and annotation tasks.
+With the off-the-shelf speech recognizer and input from 10 non-native English speaking test subjects (with English as their second language) the system ranked the targeted requirement among the top five requirements returned 93\% of the time for 100 requirements randomly sampled from an SRS containing 4544 requirements.
+
+%an experiment using a speech recognizer built upon a natural language to evaluate towards a technical domain such as a software requirement specification showed that state-of-the-art speech recognition is yet inadequate when free text is allowed. When using string edit distance algorithms such as Levenshtein's edit distance-algorithm can improve the deficiency in the speech recognizer's accuracy when using it towards a closed domain, such as one sentence titles for entities, even when the titles are built upon a technical language. When using an off-the-shelf speech recognizer with English US as the natural language base, and test subjects with English as their second language, the edit distance-algorithm provided the sought entities in a top five result (ranked on the distance between the interpreted input from the speech recognizer and the sought entity) out of 4544 of entities in 93\% of the cases.
+
+Moreover, a scalability experiment showed that with a mobile device, you can query and work with large scale SRSs with feasible round-trip times. 
+Results from the database lookups were presented to the users within seconds even for SRSs with several thousand requirements.
+Together with speech recognizers within mobile smart devices this enables users to reach and query large scale requirement databases anytime, anywhere.
+
+In user testing with five requirement engineers and managers at our industrial collaborator the system was considered surprisingly 
+accurate and responsive.
+The users considered the system a suitable addition to their workflow, in particular as a substitute for their present day lists of requirements to change and updates to be made.
+They also noted that the system was useful in requirements reviews.
+For more extensive maintenance work it would need to allow longer input of more free form text.
+Some users also was concerned about the noise they would generate while using the application; they said they would be reluctant to use it in an open office layout.
+
+Annotations on `softer' software engineering artifacts, such as requirements, is an unexplored area. 
+We have presented a way to use these annotations as a lightweight maintenance- and peer-review tool for marking requirements during development and maintenance of large-scale industrial requirements specifications. 
+Future research should investigate the long-term effects of such annotations on the quality and efficiency of requirements evolution and maintenance.
+Our system can also be used to collect metrics on requirements churn, quality and change frequencies.
+To improve speech recognition accuracy future research could build up specific speech recognition locales and dictionaries specific to the technical terms commonly seen in the technical areas related to software engineering and development.
+%\lettrine[lines=4, loversize=-0.1, lraise=0.1]{T}{his paper presents} the implementation and design a lightweight system for maintaining requirement specifications. By connecting state-of-the-art speech recognition to an annotation system aimed at requirement specifications, we showed that mobile devices can provide access to large scale requirement specifications from anywhere where you can reach the Internet. 
+
+%Speech recognition has developed over the years and has increased in accuracy. However, an experiment using a speech recognizer built upon a natural language to evaluate towards a technical domain such as a software requirement specification showed that state-of-the-art speech recognition is yet inadequate when free text is allowed. When using string edit distance algorithms such as Levenshtein's edit distance-algorithm can improve the deficiency in the speech recognizer's accuracy when using it towards a closed domain, such as one sentence titles for entities, even when the titles are built upon a technical language. When using an off-the-shelf speech recognizer with English US as the natural language base, and test subjects with English as their second language, the edit distance-algorithm provided the sought entities in a top five result (ranked on the distance between the interpreted input from the speech recognizer and the sought entity) out of 4544 of entities in 93\% of the cases.
+
+%Moreover, an experiment showed that with a mobile device, you can query and work with large scale requirement databases with feasible execution times. Results from the databases were presented to the user within seconds. Together with speech recognizers within mobile smart devices this enables users to reach and query large scale requirement databases anytime, anywhere. 
+
+%Annotations on softer artifacts are an unexplored area. We have presented a way to use these annotations as a lightweight maintenance- and peer-review-tool for marking requirements when they are of sufficient quality. For future research, we suggest that the implemented system should be carried out in a long term software project to evaluate the impact of annotations on softer artifacts. The statistics and metrics that were produced presents possible areas of research, such as inflow prediction and more background on when quality issues are introduced in SRSs. Another interesting research topic could be to implement corpora for speech recognition built up on technical terms to improve the accuracy of speech recognition in technical domains.
+
